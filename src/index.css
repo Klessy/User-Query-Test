@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities'; */
+
+
+main {
+    max-width: 1280px;
+    margin: auto;
+    min-height: 90vh;
+    padding: 10px;
+}
+
+.bg-custom {
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+}
+
+.user_detail-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    background: transparent;
+}
+
+.user_detail-card img {
+    position: absolute;
+    top: 9.2rem;
+    right: calc(50% - 4rem);
+    bottom: calc(50% - 3rem);
+    border-radius: 50%; 
+}
+
+
+
+.detail_txt {
+    /* background-color: #fff; */
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    padding-top: 4rem;
+}
+
+@media screen and (max-width: 900px) {
+    .user_detail-card {
+        padding: 10px;
+    }
+    
+    .detail_txt {
+        width: 300px;
+    }
+}
+
